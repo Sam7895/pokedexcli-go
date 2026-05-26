@@ -2,10 +2,8 @@ package main
 
 import "strings"
 
-func cleanInput(input string) []string {
-	result := []string{}
-	for _, word := range strings.Fields(input) {
-		result = append(result, strings.ToLower(word))
-	}
-	return result
+func cleanInput(text string) []string {
+	output := strings.ToLower(text)
+	words := strings.Fields(output)
+	return words
 }

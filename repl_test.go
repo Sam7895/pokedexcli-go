@@ -17,7 +17,7 @@ func TestCleanInput(t *testing.T) {
 			expected: []string{},
 		},
 		{
-			input:    "Charmander Bulbasaur PIKACHU",
+			input:    "Charmander BulBAsaur PIKACHU",
 			expected: []string{"charmander", "bulbasaur", "pikachu"},
 		},
 	}
